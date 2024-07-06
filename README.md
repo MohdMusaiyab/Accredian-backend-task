@@ -18,12 +18,13 @@ Before running this project, ensure you have the following installed:
 https://github.com/MohdMusaiyab/Accredian-backend-task
 cd Accredian-backend-task
 ```
- ### 2. Install the Dependencies
+### 2. Create your own Database and set up the environment variable in the .env file as mentioned in .env.sample file.
+ ### 3. Install the Dependencies and Set up Prisma
  ```bash
 npm install
+npx prisma generate
+npx prisma migrate dev --name init
 ```
-
-### 3. Setup the Environment Variables as given in .env.sample file
-### 4. Run the Project
+### 5. Run the Project
 ```bash
 npm run dev
